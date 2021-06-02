@@ -8,6 +8,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { TodoPageComponent } from './components/todo-page/todo-page.component';
 import { FooterModule } from './shared/footer/footer.module';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { FooterModule } from './shared/footer/footer.module';
     BrowserModule,
     AppRoutingModule,
     MainModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

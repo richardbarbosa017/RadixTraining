@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main.component';
 import { FooterModule } from 'src/app/shared/footer/footer.module';
 import { HeaderModule } from 'src/app/shared/header/header.module';
+import { CarouselModule } from 'src/app/shared/carousel/carousel.module';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { HeaderModule } from 'src/app/shared/header/header.module';
     CommonModule,
     FooterModule,
     HeaderModule,
+    CarouselModule
   ],
   exports: [MainComponent]
 })
