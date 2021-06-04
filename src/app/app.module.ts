@@ -10,6 +10,7 @@ import { TodoPageComponent } from './components/todo-page/todo-page.component';
 import { FooterModule } from './shared/footer/footer.module';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlappyBirdComponent } from './components/flappy-bird/flappy-bird.component';
 
 @NgModule({
   declarations: [

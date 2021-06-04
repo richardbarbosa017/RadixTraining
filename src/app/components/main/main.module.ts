@@ -5,6 +5,7 @@ import { MainComponent } from './main.component';
 import { FooterModule } from 'src/app/shared/footer/footer.module';
 import { HeaderModule } from 'src/app/shared/header/header.module';
 import { CarouselModule } from 'src/app/shared/carousel/carousel.module';
+import { FlappyBirdModule } from '../flappy-bird/flappy-bird.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CarouselModule } from 'src/app/shared/carousel/carousel.module';
     CommonModule,
     FooterModule,
     HeaderModule,
-    CarouselModule
+    CarouselModule,
+    FlappyBirdModule
   ],
   exports: [MainComponent]
 })
