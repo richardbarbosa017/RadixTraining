@@ -22,8 +22,15 @@ $color-secondary: rgb(42, 0, 51);
   box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.5);
 }
 .button:focus{
-  box-shadow: 0 0 0 0.25rem $color-secondary;
+  border-top: $color-secondary 3px solid;
+  box-shadow: none;
 }
 .brand{
   text-shadow: 0 0 2px $color-secondary;
+}
+.left{
+  margin: 0px !important;
+}
+.justify{
+  justify-content: flex-end;
 }

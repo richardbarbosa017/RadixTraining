@@ -1,6 +1,6 @@
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainModule } from './components/main/main.module';
@@ -11,6 +11,7 @@ import { FooterModule } from './shared/footer/footer.module';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlappyBirdComponent } from './components/flappy-bird/flappy-bird.component';
+import { HeaderModule } from './shared/header/header.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,8 @@ import { FlappyBirdComponent } from './components/flappy-bird/flappy-bird.compon
     AppRoutingModule,
     MainModule,
     BrowserAnimationsModule,
+    HeaderModule,
+    FooterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

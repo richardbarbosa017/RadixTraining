@@ -4,13 +4,16 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse justify" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 left">
         <li class="nav-item">
-          <button class="btn btn-sm btn-outline-secondary button" aria-current="page" type="button">Home</button>
+          <button class="btn btn-sm btn-outline-secondary button" aria-current="location" type="button" routerLinkActive="active" routerLink="/home">Home</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-sm btn-outline-secondary button" aria-current="page" type="button">To-do</button>
+          <button class="btn btn-sm btn-outline-secondary button" aria-current="page" type="button" routerLinkActive="active" routerLink="/todo">To-do</button>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-sm btn-outline-secondary button" aria-current="page" type="button" routerLinkActive="active" routerLink="/flappy">Flappy Bird</button>
         </li>
         <!-- Future
         <li class="nav-item">
@@ -32,10 +35,11 @@
         </li>
         -->
       </ul>
+      <!--
       <form class="d-flex">
         <input class="form-control button me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success button" type="submit">Search</button>
-      </form>
+      </form>-->
     </div>
   </div>
 </nav>
