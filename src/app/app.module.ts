@@ -1,3 +1,6 @@
+import { TodoPageModule } from './components/todo-page/todo-page.module';
+import { TodoPageService } from './services/todo-page.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +15,7 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlappyBirdComponent } from './components/flappy-bird/flappy-bird.component';
 import { HeaderModule } from './shared/header/header.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,8 +28,13 @@ import { HeaderModule } from './shared/header/header.module';
     BrowserAnimationsModule,
     HeaderModule,
     FooterModule,
+    HttpClientModule,
+    TodoPageModule
   ],
-  providers: [],
+  providers: [
+    HttpClient,
+    TodoPageService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
